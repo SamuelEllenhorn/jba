@@ -1,0 +1,110 @@
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #222;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 2px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .navbar ul li {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .navbar .register-btn {
+      background: #222;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, yellow, violet, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .countdown {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .countdown div {
+      background: rgba(255,255,255,0.7);
+      padding: 1rem;
+      border-radius: 8px;
+      min-width: 70px;
+    }
+    .hero button {
+      background: #4CAF50;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Promo Section */
+    .promos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .promo-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .promo-card img {
+      width: 100%;
+      display: block;
+    }
+  
