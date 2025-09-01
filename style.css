@@ -1,193 +1,237 @@
-    /* Reset & Base */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #222;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: #fff;
-      border-bottom: 6px solid #000000;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar .logo {
-      font-weight: bold;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      
-      
-    }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, white, #7a98b0, rgb(0, 61, 186));
+  border-bottom: 6px solid #000000;
+  border-top: 6px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .Moto {
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-    .logo {
-        border: 1px solid #a1a1a1;
-        
-        width: 200px; /* Set a fixed width */
-      height: auto;
-    }
+.Moto {
+  /* border: 1px solid #a1a1a1; */
 
-    .logopng {
-        width: 5px; /* Set a fixed width */
-      height: auto;
-      font-size: 2rem;
-      border: 5px solid #23b4a0;
-      
+  width: auto; /* Set a fixed width */
+  height: auto;
+}
 
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      
-    }
-    .navbar ul li {
+.logopng {
+  width: auto;
+  height: auto;
+  font-size: 3rem;
 
-      font-weight: bold;
-      cursor: pointer;
-      font-size: 1.8rem;
-      opacity: 0.8;
-      display: flex;
-      justify-content: space-evenly;
+  border-radius: 8px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.navbar ul li {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
+}
 
-    }
-    .navbar .register-btn {
-      background: #222;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
+.logo-dropdown-flexbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
-    
-
-    }
-    .navbar .register-btn:hover {
-        opacity: 0.7;
-    }
+.navbar .register-btn {
+  font-family: "Montserrat", Arial, sans-serif;
+  /*background: rgb(0, 61, 186);*/
+  background: #7a98b0;
+  color: #222;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.navbar .register-btn:hover {
+  background: rgb(0, 0, 129);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
 
 /*drop down menu*/
 
-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
+  padding-right: 10px;
+}
+
+.dropdown-box1 {
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+.dropdown-box1 p:hover {
+  background-color: #c2c0c0;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px 14px;
   z-index: 1;
+  border-radius: 8px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/* Hero */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 6rem;
+  background: linear-gradient(90deg, yellow, violet, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.countdown div {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 70px;
+}
+.hero button {
+  background: #4caf50;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
 
+/* Promo Section */
+.promos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.promo-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+.promo-card img {
+  width: 100%;
+  display: block;
+}
 
+/* .toptenvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  height: auto;
+} */
 
+.toptenvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
 
+.topten-mov {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
 
-    /* Hero */
-    .hero {
-      position: relative;
-      height: 80vh;
-      background: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 6rem;
-      background: linear-gradient(90deg, yellow, violet, blue);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
-    .countdown {
-      display: flex;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-    .countdown div {
-      background: rgba(255,255,255,0.7);
-      padding: 1rem;
-      border-radius: 8px;
-      min-width: 70px;
-    }
-    .hero button {
-      background: #4CAF50;
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      color: white;
-      font-weight: bold;
-    }
+/*footer styling*/
+.footer {
+  background: #222;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
 
-    /* Promo Section */
-    .promos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .promo-card {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      padding-top: 10rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
-    .promo-card img {
-      width: 100%;
-      display: block;
-    }
+.footer .camplogo {
+  margin-bottom: 1rem;
+}
 
+/*social media*/
 
-
-
-
-    /*footer styling*/
-    .footer {
-    background: #222;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-    }
-
-    .footer .camplogo {
-    margin-bottom: 1rem;
-    }
-
-    /*social media*/
-
-    .fa {
+.fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -204,23 +248,23 @@ dropdown {
 
 /* Facebook */
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 
 /* Twitter */
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
 .fa-instagram {
-  background: #E1306C;
+  background: #e1306c;
   color: white;
 }
 
 /* Google */
 .fa-google {
-  background: #DB4437;
+  background: #db4437;
   color: white;
 }

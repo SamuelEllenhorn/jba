@@ -1,102 +1,123 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JBA Official Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camp Ariel Summer 2025</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-
-  <!-- Navbar -->
-  <nav class="navbar">
-
-    <div class="logopng">
-        <img src="./images/logo.png" alt="logo" width="40" height="50">
-    </div>
-    
-    <div class="logo">
-        Official Website of the JBA 
-    </div>
-    <div class="dropdown">
-        <span>
-        <img src="./images/dropdown.png" width="20" height="20">
-        </span>
-        <div class="dropdown-content">
-            <p>JBA Teams</p>
-            
-            <p>Camp JBA</p>
-            <p>About</p>
-            <p>Get in Touch</p>
-            <p><a href="calender.html">Calender</a></p>
-
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo-dropdown-flexbox">
+        <div class="logopng">
+          <img src="./images/logo.png" alt="JBA" width="60rem" height="70rem" />
         </div>
-    </div>
-        
-  <!----  <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">CALENDAR</a></li>
-      <li><a href="#">ABOUT</a></li>
-      <li><a href="#">MEDIA</a></li>
-    </ul>
--->
-    <a href="#" class="register-btn">REGISTER NOW</a>
 
-  </nav>
+        <div class="dropdown">
+          <span>
+            <img src="./images/dropdown.png" width="20" height="20" />
+          </span>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>CAMP JBA <br> SUMMER 2025</h1>
-    
-    <button>Register Now!</button>
-  </section>
+          <div class="dropdown-content">
+            <div class="dropdown-box1">
+              <p><a href="index.html" class="home-btn">Home</a></p>
+            </div>
 
-  <!-- Promos -->
-  <section class="promos">
-    <div class="promo-card">
-      this is the about section Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, placeat ullam, delectus ipsa nisi, aliquid ipsam iste vitae maxime libero iure culpa alias temporibus nesciunt sunt tempora quae inventore distinctio.
-    </div>
+            <div class="dropdown-box1">
+              <p><a href="./jbateams/jbateams.html">JBA Teams</a></p>
+            </div>
+            <div class="dropdown-box1">
+              <p><a href="getintouch.html">Get in Touch</a></p>
+            </div>
 
-    <div class="opaquetiles">
-      <video width="320" height="240" controls>
-        <source src="https://www.youtube.com/watch?v=LiMHi-Z5ZZc" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support the video tag.
-    </video>
+            <div class="dropdown-box1">
+              <p><a href="about.html">About</a></p>
+            </div>
 
+            <div class="dropdown-box1">
+              <p><a href="campjba.html">Camp JBA</a></p>
+            </div>
 
-    </div>
-    
-  </section>
+            <div class="dropdown-box1">
+              <p><a href="calender.html">Calender</a></p>
+            </div>
 
-  <section class="footer">
-    
-    <div class="camplogo">
-      <p>&copy; 2025 Camp JBA. All rights reserved.</p>
-    </div>
+            <div class="dropdown-box1">
+              <p><a href="barmitzvah.html">Bar Mitzvah</a></p>
+            </div>
 
-    <section class="socialmedia">
-    <div class="social-icons">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-google"></a>
-    </div>
+            <div class="dropdown-box1">
+              <p><a href="birthdayparty.html">Birthday Party</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </section>
-  
+      <div class="Moto" style="font-size: 3vw">Official Website of the JBA</div>
 
+      <a
+        href="#"
+        class="register-btn"
+        onclick="location.href='./registration/registration.html'"
+        >REGISTER NOW!</a
+      >
+    </nav>
 
-</section>
+    <!--End Navbar-->
 
-  
-  
-  
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>
+        CAMP JBA <br />
+        SUMMER 2025
+      </h1>
+
+      <button>Register Now!</button>
+    </section>
+
+    <!-- Promos -->
+    <section class="promos">
+      <div class="promo-card" style="font-size: 2vw">
+        Welcome to the Jewish Basketball Association (JBA) — your home for
+        Jewish youth basketball in Los Angeles! At JBA, we offer year-round
+        programs for boys and girls, including competitive teams, skill-building
+        clinics, and our brand-new Jewish basketball summer program. We also
+        host unforgettable bar mitzvah basketball tournaments and birthday
+        parties designed for fun, energy, and lasting memories. This website is
+        your hub for everything JBA — from team schedules and event calendars to
+        p
+      </div>
+
+      <div class="toptenvideo">
+        <video controls class="topten-mov">
+          <source src="./videos/topten.MOV" type="video/quicktime" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="camplogo">
+        <p>&copy; 2025 Camp JBA. All rights reserved.</p>
+      </div>
+
+      <section class="socialmedia">
+        <div class="social-icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div>
+      </section>
+    </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
