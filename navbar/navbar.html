@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Top Contact Bar */
+      .top-bar {
+        background: #161616;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 7px;
+        padding-top: 14px;
+        font-size: 14px;
+      }
+
+      .top-bar .left span {
+        margin-right: 15px;
+      }
+
+      .top-bar i {
+        color: rgb(231, 231, 231);
+        margin-right: 6px;
+        opacity: 1;
+      }
+
+      .top-bar .right i {
+        margin-left: 12px;
+        cursor: pointer;
+      }
+
+      .top-bar .right i:hover {
+        color: white;
+        opacity: 0.7;
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        background: white;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        height: 80px;
+      }
+
+      .navbar .logo img {
+        height: 60px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+      }
+
+      .navbar ul li {
+        position: relative;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: #222;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      .navbar ul li a.active {
+        color: #rgb(0, 0, 129);
+        border-bottom: 2px solid rgb(0, 0, 129);
+        padding-bottom: 2px;
+      }
+
+      /* Dropdown */
+      .navbar ul li ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background: white;
+        list-style: none;
+        padding: 10px 0;
+        border: 1px solid #ddd;
+        min-width: 150px;
+        z-index: 1000;
+      }
+
+      .navbar ul li:hover ul {
+        display: block;
+      }
+
+      .navbar ul li ul li {
+        padding: 8px 15px;
+      }
+
+      .navbar ul li ul li a {
+        font-weight: normal;
+        color: #333;
+      }
+
+      /* Register Button */
+      .register-btn {
+        background: srgb(0, 0, 218);
+        color: #000;
+        border: 1px solid #333;
+        padding: 10px 18px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .register-btn:hover {
+        background: rgb(78, 78, 82);
+      }
+
+      /* Hamburger */
+      .hamburger {
+        display: none;
+        font-size: 28px;
+        cursor: pointer;
+      }
+
+      /* Mobile Styles */
+      @media (max-width: 900px) {
+        .navbar ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          flex-direction: column;
+          background: white;
+          border-top: 1px solid #ddd;
+          display: none;
+        }
+
+        .navbar ul li {
+          text-align: center;
+          padding: 12px 0;
+        }
+
+        .navbar ul li ul {
+          position: static;
+          border: none;
+          box-shadow: none;
+        }
+
+        .navbar ul li:hover ul {
+          display: none;
+        }
+
+        .navbar ul li.active-dropdown ul {
+          display: block;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .register-btn {
+          display: none;
+        }
+      }
+
+      .fa {
+        padding: 12px;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        text-align: justify;
+        text-decoration: none;
+        margin: 5px 2px;
+        border: #ddd solid 1px;
+        border-radius: 8px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="left">
+        <span><i class="fas fa-phone"></i> (323) 600-7775</span>
+        <span><i class="fas fa-envelope"></i> Arielsokol@gmail.com</span>
+      </div>
+      <div class="right">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../images/logo.png" alt="JBA Logo" />
+      </div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <div class="moto">
+        <h2 style="font-size: 2.5vw">Official Website of the JBA</h2>
+      </div>
+
+      <!-- Menu -->
+      <ul id="nav-links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li onclick="toggleDropdown(this)">
+          <a href="#">ABOUT JBA ▾</a>
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#">JBA TEAMS</a></li>
+        <li><a href="#">CAMP JBA</a></li>
+        <li><a href="#">CALENDER</a></li>
+        <li><a href="#">BIRTHDAY PARTIES</a></li>
+        <li><a href="#" class="register-btn">REGISTER NOW ▸</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("nav-links");
+        nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+      }
+
+      function toggleDropdown(element) {
+        element.classList.toggle("active-dropdown");
+      }
+    </script>
+  </body>
+</html>

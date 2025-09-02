@@ -5,7 +5,17 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>JBA Official Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,62 +24,55 @@
 
   <body>
     <!-- Navbar -->
+
+    <div class="top-bar">
+      <div class="left">
+        <span><i class="fas fa-phone"></i> (323) 600-7775</span>
+        <span><i class="fas fa-envelope"></i> Arielsokol@gmail.com</span>
+      </div>
+      <div class="right">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+    </div>
+
     <nav class="navbar">
-      <div class="logo-dropdown-flexbox">
-        <div class="logopng">
-          <img src="./images/logo.png" alt="JBA" width="60rem" height="70rem" />
-        </div>
-
-        <div class="dropdown">
-          <span>
-            <img src="./images/dropdown.png" width="20" height="20" />
-          </span>
-
-          <div class="dropdown-content">
-            <div class="dropdown-box1">
-              <p><a href="index.html" class="home-btn">Home</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="./jbateams/jbateams.html">JBA Teams</a></p>
-            </div>
-            <div class="dropdown-box1">
-              <p><a href="getintouch.html">Get in Touch</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="about.html">About</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="campjba.html">Camp JBA</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="calender.html">Calender</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="barmitzvah.html">Bar Mitzvah</a></p>
-            </div>
-
-            <div class="dropdown-box1">
-              <p><a href="birthdayparty.html">Birthday Party</a></p>
-            </div>
-          </div>
-        </div>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./images/logo.png" alt="JBA Logo" />
       </div>
 
-      <div class="Moto" style="font-size: 3vw">Official Website of the JBA</div>
+      <!-- Hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
 
-      <a
-        href="#"
-        class="register-btn"
-        onclick="location.href='./registration/registration.html'"
-        >REGISTER NOW!</a
-      >
+      <div class="moto">
+        <h2 style="font-size: 2.5vw">Official Website of the JBA</h2>
+      </div>
+
+      <!-- Menu -->
+      <ul id="nav-links">
+        <li><a href="#" class="active">HOME</a></li>
+        <li onclick="toggleDropdown(this)">
+          <a href="#">ABOUT JBA ▾</a>
+          <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </li>
+        <li><a href="#">JBA TEAMS</a></li>
+        <li><a href="#">CAMP JBA</a></li>
+        <li><a href="#">CALENDER</a></li>
+        <li><a href="#">BIRTHDAY PARTIES</a></li>
+        <li>
+          <a href="./registration/registration.html" class="register-btn"
+            >REGISTER NOW ▸</a
+          >
+        </li>
+      </ul>
     </nav>
-
     <!--End Navbar-->
 
     <!-- Hero Section -->
