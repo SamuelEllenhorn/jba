@@ -58,11 +58,17 @@
         <li onclick="toggleDropdown(this)">
           <a href="#">ABOUT JBA ▾</a>
           <ul>
-            <li><a href="#">Mission</a></li>
             <li><a href="#">Team</a></li>
           </ul>
         </li>
-        <li><a href="#">JBA TEAMS</a></li>
+        <li onclick="toggleDropdown(this)">
+          <a href="#">JBA TEAMS ▾</a>
+          <ul>
+            <li><a href="./jbateams/jbateams.html">Team 1</a></li>
+            <li><a href="#">Team 3</a></li>
+            <li><a href="#">Team 2</a></li>
+          </ul>
+        </li>
         <li><a href="#">CAMP JBA</a></li>
         <li><a href="#">CALENDER</a></li>
         <li><a href="#">BIRTHDAY PARTIES</a></li>
@@ -106,20 +112,62 @@
       </div>
     </section>
 
-    <section class="footer">
-      <div class="camplogo">
-        <p>&copy; 2025 Camp JBA. All rights reserved.</p>
-      </div>
-
-      <section class="socialmedia">
-        <div class="social-icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-google"></a>
+    <footer class="custom-footer">
+      <div class="footer-top">
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+          <a href="#" aria-label="Search"><i class="fa fa-search"></i></a>
         </div>
-      </section>
-    </section>
+        <div class="footer-contact">
+          Questions? <strong>Call us! <em>1-800-645-3226</em></strong>
+        </div>
+        <div class="footer-logo">
+          <img src="./images/logo.png" alt="JBA" height="40" />
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-copyright">
+          &copy; 2025 JBA Sports Camps - Beverly Hills | SSWD, LLC. All Rights
+          Reserved. |
+          <a href="#">Contact</a> | <a href="#">About</a> |
+          <a href="#">Home</a> | <a href="#">JBA Teams</a> |
+        </div>
+        <div class="footer-legal">
+          <small>
+            *The JBA Basketball Camp in Los Angeles is dedicated to providing
+            young athletes with an exceptional basketball experience, focusing
+            on skill development, teamwork, and personal growth. Our camp offers
+            a dynamic environment where players of all levels can learn from
+            experienced coaches, participate in competitive games, and build
+            lasting friendships. With a commitment to excellence both on and off
+            the court, the JBA Basketball Camp emphasizes sportsmanship,
+            leadership, and a love for the game. Located in the heart of LA, our
+            program welcomes boys and girls to join a community that celebrates
+            diversity, encourages healthy competition, and inspires every camper
+            to reach their full potential..
+          </small>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-flags">
+          <img src="./images/flag-usa.png" alt="USA" height="20" />
+          <img src="./images/flag-england.png" alt="UK" height="20" />
+          <img src="./images/flag-india.png" alt="USA" height="20" />
+          <img src="./images/flag-france.png" alt="UK" height="20" />
+          <img src="./images/flag-usa.png" alt="USA" height="20" />
+          <img src="./images/flag-israel.png" alt="UK" height="20" />
+        </div>
+        <div class="footer-links">
+          <a href="#">Calender</a>
+          <a href="#">Register</a>
+          <a href="#">About</a>
+          <a href="#">Home</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

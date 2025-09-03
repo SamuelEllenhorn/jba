@@ -30,3 +30,15 @@ function toggleMenu() {
 function toggleDropdown(element) {
   element.classList.toggle("active-dropdown");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var contact = document.querySelector(".footer-contact");
+  if (contact) {
+    contact.addEventListener("mouseenter", function () {
+      contact.style.color = "#f57c00";
+    });
+    contact.addEventListener("mouseleave", function () {
+      contact.style.color = "";
+    });
+  }
+});
