@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var contact = document.querySelector(".footer-contact");
   if (contact) {
     contact.addEventListener("mouseenter", function () {
-      contact.style.color = "#1400f5ff";
+      contact.style.color = "#f57c00";
     });
     contact.addEventListener("mouseleave", function () {
       contact.style.color = "";
@@ -43,6 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-registration = () => {
+function registration() {
   window.location.href = "./registration/registration.html";
-};
+}

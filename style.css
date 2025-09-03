@@ -95,6 +95,7 @@ body {
   color: #rgb(0, 0, 129);
   border-bottom: 2px solid rgb(0, 0, 129);
   padding-bottom: 2px;
+  position: relative;
 }
 
 /* Dropdown */
@@ -238,7 +239,12 @@ body {
 }
 .hero h1 {
   font-size: 6rem;
-  background: linear-gradient(90deg, white, grey, blue);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    grey,
+    rgb(255, 254, 254)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -350,6 +356,9 @@ body {
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
+.footer-social {
+  padding-left: 20px;
+}
 .footer-social a {
   color: #fff;
   margin-right: 1.2rem;
@@ -368,7 +377,8 @@ body {
   gap: 0.5rem;
 }
 .footer-logo img {
-  height: 40px;
+  height: 60px;
+  padding-right: 20px;
 }
 .footer-middle {
   margin-bottom: 1rem;
