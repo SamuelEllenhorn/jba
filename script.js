@@ -35,10 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var contact = document.querySelector(".footer-contact");
   if (contact) {
     contact.addEventListener("mouseenter", function () {
-      contact.style.color = "#f57c00";
+      contact.style.color = "#1400f5ff";
     });
     contact.addEventListener("mouseleave", function () {
       contact.style.color = "";
     });
   }
 });
+
+registration = () => {
+  window.location.href = "./registration/registration.html";
+};

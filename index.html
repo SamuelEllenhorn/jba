@@ -24,64 +24,65 @@
 
   <body>
     <!-- Navbar -->
+    <div class="navbar-wrapper">
+      <div class="top-bar">
+        <div class="left">
+          <span><i class="fas fa-phone"></i> (323) 600-7775</span>
+          <span><i class="fas fa-envelope"></i> Arielsokol@gmail.com</span>
+        </div>
+        <div class="right">
+          <a
+            href="https://www.instagram.com/jbahoopsla/"
+            class="fa fa-instagram"
+          ></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-google"></a>
+        </div>
+      </div>
 
-    <div class="top-bar">
-      <div class="left">
-        <span><i class="fas fa-phone"></i> (323) 600-7775</span>
-        <span><i class="fas fa-envelope"></i> Arielsokol@gmail.com</span>
-      </div>
-      <div class="right">
-        <a
-          href="https://www.instagram.com/jbahoopsla/"
-          class="fa fa-instagram"
-        ></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-google"></a>
-      </div>
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="JBA Logo" />
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="moto">
+          <h2 style="font-size: 2.5vw">Official Website of the JBA</h2>
+        </div>
+
+        <!-- Menu -->
+        <ul id="nav-links">
+          <li><a href="./index.html" class="active">HOME</a></li>
+          <li onclick="toggleDropdown(this)">
+            <a href="#">ABOUT JBA ▾</a>
+            <ul>
+              <li><a href="#">Team</a></li>
+            </ul>
+          </li>
+          <li onclick="toggleDropdown(this)">
+            <a href="#">JBA TEAMS ▾</a>
+            <ul>
+              <li><a href="./jbateams/jbateams.html">Team 1</a></li>
+              <li><a href="#">Team 3</a></li>
+              <li><a href="#">Team 2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CAMP JBA</a></li>
+          <li><a href="#">CALENDER</a></li>
+          <li><a href="#">BIRTHDAY PARTIES</a></li>
+          <li>
+            <a href="./registration/registration.html" class="register-btn"
+              >REGISTER NOW ▸</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="./images/logo.png" alt="JBA Logo" />
-      </div>
-
-      <!-- Hamburger -->
-      <div class="hamburger" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </div>
-
-      <div class="moto">
-        <h2 style="font-size: 2.5vw">Official Website of the JBA</h2>
-      </div>
-
-      <!-- Menu -->
-      <ul id="nav-links">
-        <li><a href="#" class="active">HOME</a></li>
-        <li onclick="toggleDropdown(this)">
-          <a href="#">ABOUT JBA ▾</a>
-          <ul>
-            <li><a href="#">Team</a></li>
-          </ul>
-        </li>
-        <li onclick="toggleDropdown(this)">
-          <a href="#">JBA TEAMS ▾</a>
-          <ul>
-            <li><a href="./jbateams/jbateams.html">Team 1</a></li>
-            <li><a href="#">Team 3</a></li>
-            <li><a href="#">Team 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">CAMP JBA</a></li>
-        <li><a href="#">CALENDER</a></li>
-        <li><a href="#">BIRTHDAY PARTIES</a></li>
-        <li>
-          <a href="./registration/registration.html" class="register-btn"
-            >REGISTER NOW ▸</a
-          >
-        </li>
-      </ul>
-    </nav>
     <!--End Navbar-->
 
     <!-- Hero Section -->
@@ -91,7 +92,7 @@
         SUMMER 2025
       </h1>
 
-      <button>Register Now!</button>
+      <button onclick="registration()">Register Now!</button>
     </section>
 
     <section class="announcement">
@@ -119,31 +120,70 @@
     </section>
 
     <!-- Promos -->
+
+    <section class="coaches">
+      <title>Our Coaches</title>
+      <h1>OUR COACHES</h1>
+    </section>
     <section class="promos">
       <div class="promo-card" style="font-size: 2vw">
-        <title>About JBA</title>
-        <h2>About JBA</h2>
-        <div class="about-jba-paragraph">
-          <p>
-            Welcome to the Jewish Basketball Association (JBA) — your home for
-            Jewish youth basketball in Los Angeles! At JBA, we offer year-round
-            programs for boys and girls, including competitive teams,
-            skill-building clinics, and our brand-new Jewish basketball summer
-            program. We also host unforgettable bar mitzvah basketball
-            tournaments and birthday parties designed for fun, energy, and
-            lasting memories. This website is your hub for everything JBA — from
-            team schedules and event calendars to
-          </p>
+        <!-- dividerrr -->
+        <div class="coach-photo">
+          <img src="./images/ariel.jpg" alt="5 Terre" style="width: 100%" />
+          <div class="coaches-photo-container">
+            <p>
+              Coach Ariel - Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Reiciendis nostrum omnis nobis quae nihil temporibus
+              quibusdam dolor libero, tenetur ducimus ratione eligendi. Pariatur
+              id cupiditate accusantium amet cumque eius vero.
+            </p>
+          </div>
         </div>
+        <!-- diverrrrr endddd -->
       </div>
-
-      <div class="toptenvideo">
-        <video controls class="topten-mov">
-          <source src="./videos/topten.MOV" type="video/quicktime" />
-          Your browser does not support the video tag.
-        </video>
+      <div class="promo-card" style="font-size: 2vw">
+        <!-- dividerrr -->
+        <div class="coach-photo">
+          <img src="./images/simcha.jpg" alt="5 Terre" style="width: 100%" />
+          <div class="coaches-photo-container">
+            <p>
+              Coach Ariel - Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Reiciendis nostrum omnis nobis quae nihil temporibus
+              quibusdam dolor libero, tenetur ducimus ratione eligendi. Pariatur
+              id cupiditate accusantium amet cumque eius vero.
+            </p>
+          </div>
+        </div>
+        <!-- diverrrrr endddd -->
+      </div>
+      <div class="promo-card" style="font-size: 2vw">
+        <!-- dividerrr -->
+        <div class="coach-photo">
+          <img src="./images/seffi.jpg" alt="5 Terre" style="width: 100%" />
+          <div class="coaches-photo-container">
+            <p>
+              Coach Ariel - Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Reiciendis nostrum omnis nobis quae nihil temporibus
+              quibusdam dolor libero, tenetur ducimus ratione eligendi. Pariatur
+              id cupiditate accusantium amet cumque eius vero.
+            </p>
+          </div>
+        </div>
+        <!-- diverrrrr endddd -->
       </div>
     </section>
+
+    <div class="toptenvideo">
+      <section class="video-title">
+        <h2 style="text-align: center">Top 10 Plays of the Month</h2>
+      </section>
+      <section class="video-container">
+        <video controls="controls" width="800" height="600" class="topten-mov">
+          <source src="./videos/topten.MOV" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </div>
 
     <footer class="custom-footer">
       <div class="footer-top">
@@ -152,7 +192,7 @@
           <a href="https://www.instagram.com/jbahoopsla/" aria-label="Instagram"
             ><i class="fa fa-instagram"></i
           ></a>
-          <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+
           <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
           <a href="#" aria-label="Search"><i class="fa fa-search"></i></a>
         </div>
