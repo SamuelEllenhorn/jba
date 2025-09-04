@@ -1,0 +1,60 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url("../images/campjba.png");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+
+  left: 2vw;
+  top: 2vw;
+}
+
+.topleft img {
+  padding-top: 6 vw;
+  height: 80px;
+  width: auto;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.home-image img {
+  padding-left: 1px;
+}
+
+.home-section {
+  color: white;
+}
+.home-section :hover {
+  color: #565554;
+  cursor: pointer;
+}
