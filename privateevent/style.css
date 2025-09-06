@@ -68,7 +68,6 @@ body {
   border-bottom: 1px solid #eee;
   position: relative;
   height: 80px;
-  z-index: 1;
 }
 
 .navbar .logo img {
@@ -141,8 +140,6 @@ body {
 .register-btn:hover {
   background: rgb(78, 78, 82);
 }
-
-/*register button two*/
 
 /* Hamburger */
 .hamburger {
@@ -237,10 +234,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  color: white;
   text-align: center;
+  z-index: -10;
 }
-
 .hero h1 {
   font-size: 6rem;
   background: linear-gradient(
@@ -253,6 +250,30 @@ body {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.countdown div {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 70px;
+}
+.hero button {
+  background: #4caf50;
+  border: white solid 1px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.hero button:hover {
+  background: #45a049;
 }
 
 /* Promo Section */
@@ -596,72 +617,85 @@ body {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-
+/*New Code*/
 /*
-popup
+Calender styling
 */
 
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.calender {
+  padding-left: 15 px;
+  padding-right: 15 px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers items horizontally along the main axis */
+  align-items: center;
+}
+.calender iframe {
+  position: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: #000 6px;
+  width: 85vw;
 }
 
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 50vw;
-  height: 30vh;
-  background-color: #ede7e7;
-  color: #060606;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: fixed;
-  z-index: 1;
-  top: 30%;
-  left: 25%;
-  border: #000 solid 2px;
+/*
+end calender style
+*/
+
+/*
+media section style
+*/
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #ffffff transparent transparent transparent;
+div.scroll-container img {
+  padding: 10px;
+}
+/*end media section style*/
+/*Registration */
+.register-section {
+  background-color: #ffffff;
+
+  padding-bottom: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: larger;
 }
 
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+.register-btn {
+  background-color: #1d00f500;
+  max-width: 4vw;
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.register-paragraph {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: #000 2px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.register-divider {
+  height: 6px;
+  background-color: #bebebe;
 }
+
+/*End Registration*/
+
+/*Side bars*/
+.left-side-bar {
+}
+/*end side bars*/
