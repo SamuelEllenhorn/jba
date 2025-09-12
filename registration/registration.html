@@ -10,89 +10,118 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  
   </head>
 
   <body>
     <!--     
     navbar     -->
-    <nav class="navbar">
-      <div class="navbar-slideshow">
-        <img
-          class="slide"
-          src="../images/slideshow/slide1.jpg"
-          style="display: block"
-        />
-        <img
-          class="slide"
-          src="../images/slideshow/slide2.jpg"
-          style="display: none"
-        />
-        <img
-          class="slide"
-          src="../images/slideshow/slide3.jpg"
-          style="display: none"
-        />
+    <!-- Navbar -->
+    <div class="navbar-wrapper">
+      <div class="top-bar">
+        <div class="left">
+          <span><i class="fas fa-phone"></i> (310) 303-9480</span>
+          <span><i class="fas fa-envelope"></i> Jbahoopsla@gmail.com</span>
+        </div>
+        <div class="right">
+          <a
+            href="https://www.instagram.com/jbahoopsla/"
+            class="fa fa-instagram"
+          ></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a
+            href="mailto:Jbahoopsla@gmail?&subject=JBA%20Team%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20the%20JBA%20teams.%20Please%20provide%20me%20with%20more%20information%20regarding%20the%20following:%0D%0A%0D%0AThank%20you.%0D%0A"
+            target="_top"
+            class="fa fa-google"
+          ></a>
+        </div>
       </div>
 
-      <div class="logo-dropdown-flexbox">
-        <div class="logopng">
-          <img
-            src="../images/logo.png"
-            alt="JBA"
-            width="60rem"
-            height="70rem"
-          />
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="../images/logo.png" alt="JBA Logo" />
         </div>
 
-        <div class="dropdown">
-          <span>
-            <img src="../images/dropdown.png" width="20" height="20" />
-          </span>
-          <div class="dropdown-content">
-            <div class="dropdown-box1">
-              <p><a href="../index.html" class="home-btn">Home</a></p>
-            </div>
-            <div class="dropdown-box1">
-              <p><a href="../jbateams/jbateams.html">JBA Teams</a></p>
-            </div>
-            <div class="dropdown-box1">
-              <p><a href="getintouch.html">Get in Touch</a></p>
-            </div>
+        <!-- Hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
 
-            <div class="dropdown-box1">
-              <p><a href="about.html">About</a></p>
-            </div>
+        <div class="moto">
+          <h2 style="font-size: 2.5vw">Official Website of the JBA</h2>
+        </div>
 
-            <div class="dropdown-box1">
-              <p><a href="campjba.html">Camp JBA</a></p>
-            </div>
+        <!-- Menu -->
 
-            <div class="dropdown-box1">
-              <p><a href="calender.html">Calender</a></p>
-            </div>
+        <ul id="nav-links">
+          <!-- list item -->
 
-            <div class="dropdown-box1">
-              <p><a href="barmitzvah.html">Bar Mitzvah</a></p>
-            </div>
+          <li><a href="../index.html" class="active">HOME</a></li>
+          <li>
+            <a href="../index.html#commissioner-message-jump">ABOUT JBA</a>
+          </li>
 
-            <div class="dropdown-box1">
-              <p><a href="birthdayparty.html">Birthday Party</a></p>
+          <div class="dropdown">
+            <li>
+              <a href="./index.html">JBA BOYS ▾</a>
+            </li>
+            <div class="dropdown-content">
+              <a href="../jbateams/thirdgradeb/third.html">1st Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">2nd Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">3rd Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">4th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">5th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">6th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">7th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">8th Grade</a>
             </div>
           </div>
-        </div>
-      </div>
+          <div class="dropdown">
+            <li>
+              <a href="./index.html">JBA GIRLS ▾</a>
+            </li>
+            <div class="dropdown-content">
+              <a href="../jbateams/thirdgradeb/third.html">1st Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">2nd Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">3rd Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">4th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">5th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">6th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">7th Grade</a>
+              <a href="../jbateams/thirdgradeb/third.html">8th Grade</a>
+            </div>
+          </div>
 
-      <div class="Moto" style="font-size: 3vw">Official Website of the JBA</div>
+          <li><a href="../campjba/campjba.html">CAMP JBA</a></li>
 
-      <a
-        href="#"
-        class="register-btn"
-        onclick="location.href='./registration/registration.html'"
-        >REGISTER NOW!</a
-      >
-    </nav>
-
-    <!--End Navbar-->
+          <li>
+            <a href="../privateevent/privateevent.html">PRIVATE EVENT</a>
+          </li>
+          <li>
+            <a href="../registration/registration.html" class="register-btn"
+              >REGISTER NOW ▸</a
+            >
+          </li>
+          <!-- list item -->
+        </ul>
+      </nav>
+    
+    <!--navbar end-->
 
     <section class="form-section">
       <iframe
@@ -105,18 +134,211 @@
       >
         Loading…
       </iframe>
+      <br />
+      
+
+
+<br />
+
+
+<div class="popup" onclick="myFunction()">
+            <a href="#" class="paymeant-link-btn"
+        >Click Here to Complete Registration ▸</a
+      >
+            <span class="popuptext" id="myPopup">
+              <br />
+              <h1>Get in Touch Today</h1>
+              <br />
+              <br />
+              <br />
+              <p>
+                Contact us to get more information regarding registration and
+                paymeant
+              </p>
+              <br />
+
+              <span><i class="fas fa-phone"></i> (310) 303-9480</span>
+              <span><i class="fas fa-envelope"></i> Jbahoopsla@gmail.com</span>
+
+              <br />
+              <br />
+              <br />
+              <a href="#" aria-label="Facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jbahoopsla/"
+                aria-label="Instagram"
+                ><i class="fa fa-instagram"></i
+              ></a>
+
+              <a
+                href="mailto:Jbahoopsla@gmail?&subject=JBA%20Team%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20the%20JBA%20teams.%20Please%20provide%20me%20with%20more%20information%20regarding%20the%20following:%0D%0A%0D%0AThank%20you.%0D%0A"
+                target="_top"
+                class="fa fa-google"
+              ></a>
+            </span>
+          </div>
+
+<br />
+
+
+
+
+
+
+
+
+
+
+
     </section>
 
-    <script>
-      let slideIndex = 0;
-      const slides = document.querySelectorAll(".navbar-slideshow .slide");
-      function showSlides() {
-        slides.forEach((img, i) => (img.style.display = "none"));
-        slideIndex = slideIndex + 1 > slides.length ? 1 : slideIndex + 1;
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      if (slides.length) showSlides();
-    </script>
+    <!--------------
+-----footer-----
+----------------
+---------------->
+    <footer class="custom-footer">
+      <div class="footer-top">
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+
+          <a href="https://www.instagram.com/jbahoopsla/" aria-label="Instagram"
+            ><i class="fa fa-instagram"></i
+          ></a>
+
+          <a href="#" aria-label="YouTube"><i class="fa fa-youtube"></i></a>
+          <a
+            href="mailto:Jbahoopsla@gmail?&subject=JBA%20Team%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20the%20JBA%20teams.%20Please%20provide%20me%20with%20more%20information%20regarding%20the%20following:%0D%0A%0D%0AThank%20you.%0D%0A"
+            target="_top"
+            class="fa fa-google"
+          ></a>
+        </div>
+        <div class="footer-contact">
+          Questions? <strong>Call us! <em>1-310-303-9480</em></strong>
+        </div>
+        <div class="footer-logo">
+          <img src="../images/logo.png" alt="JBA" height="40" />
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-copyright">
+          &copy; 2025 JBA Sports Camps - Beverly Hills | SSWD, LLC. All Rights
+          Reserved. |
+          <div class="popup" onclick="myFunction()">
+            <a>Contact</a>
+            <span class="popuptext" id="myPopup">
+              <br />
+              <h1>Get in Touch Today</h1>
+              <br />
+              <br />
+              <br />
+              <p>
+                Contact us to get more information regarding registration and
+                paymeant
+              </p>
+              <br />
+
+              <span><i class="fas fa-phone"></i> (310) 303-9480</span>
+              <span><i class="fas fa-envelope"></i> Jbahoopsla@gmail.com</span>
+
+              <br />
+              <br />
+              <br />
+              <a href="#" aria-label="Facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jbahoopsla/"
+                aria-label="Instagram"
+                ><i class="fa fa-instagram"></i
+              ></a>
+
+              <a
+                href="mailto:Jbahoopsla@gmail?&subject=JBA%20Team%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20the%20JBA%20teams.%20Please%20provide%20me%20with%20more%20information%20regarding%20the%20following:%0D%0A%0D%0AThank%20you.%0D%0A"
+                target="_top"
+                class="fa fa-google"
+              ></a>
+            </span>
+          </div>
+
+          |
+          <a href="../index.html#commissioner-message-jump">About</a> |
+          <a href="#">Home</a>
+        </div>
+        <div class="footer-legal">
+          <small>
+            *The JBA Basketball Camp in Los Angeles is dedicated to providing
+            young athletes with an exceptional basketball experience, focusing
+            on skill development, teamwork, and personal growth. Our camp offers
+            a dynamic environment where players of all levels can learn from
+            experienced coaches, participate in competitive games, and build
+            lasting friendships. With a commitment to excellence both on and off
+            the court, the JBA Basketball Camp emphasizes sportsmanship,
+            leadership, and a love for the game. Located in the heart of LA, our
+            program welcomes boys and girls to join a community that celebrates
+            diversity, encourages healthy competition, and inspires every camper
+            to reach their full potential..
+          </small>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-flags">
+          <img src="../images/flag-usa.png" alt="USA" height="20" />
+          <img src="../images/flag-england.png" alt="UK" height="20" />
+          <img src="../images/flag-india.png" alt="USA" height="20" />
+          <img src="../images/flag-france.png" alt="UK" height="20" />
+          <img src="../images/flag-usa.png" alt="USA" height="20" />
+          <img src="../images/flag-israel.png" alt="UK" height="20" />
+        </div>
+        <div class="footer-links">
+          <div class="popup" onclick="myFunction()">
+            <a>Contact</a>
+            <span class="popuptext" id="myPopup">
+              <br />
+              <h1>Get in Touch Today</h1>
+              <br />
+              <br />
+              <br />
+              <p>
+                Contact us to get more information regarding registration and
+                paymeant
+              </p>
+              <br />
+
+              <span><i class="fas fa-phone"></i> (310) 303-9480</span>
+              <span><i class="fas fa-envelope"></i> Jbahoopsla@gmail.com</span>
+
+              <br />
+              <br />
+              <br />
+              <a href="#" aria-label="Facebook"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jbahoopsla/"
+                aria-label="Instagram"
+                ><i class="fa fa-instagram"></i
+              ></a>
+
+              <a
+                href="mailto:Jbahoopsla@gmail?&subject=JBA%20Team%20Inquiry&body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20inquire%20about%20the%20JBA%20teams.%20Please%20provide%20me%20with%20more%20information%20regarding%20the%20following:%0D%0A%0D%0AThank%20you.%0D%0A"
+                target="_top"
+                class="fa fa-google"
+              ></a>
+            </span>
+          </div>
+          <a href="../registration/registration.html">Register</a>
+          <a href="../index.html#commissioner-message-jump">About</a>
+          <a href="#">Home</a>
+        </div>
+      </div>
+    </footer>
+
+    <!--------------
+-----footer-----
+----------------
+---------------->
+<script src="script.js"></script>
   </body>
 </html>

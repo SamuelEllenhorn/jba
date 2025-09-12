@@ -138,6 +138,10 @@ body {
   transition: 0.3s;
 }
 
+.hero .register-btn {
+  background-color: #0060a5;
+}
+
 .register-btn:hover {
   background: rgb(78, 78, 82);
 }
@@ -457,6 +461,7 @@ body {
 
 .top-bar .left span {
   margin-right: 15px;
+  font-size: larger;
 }
 
 .top-bar i {
@@ -473,6 +478,17 @@ body {
 .top-bar .right i:hover {
   color: white;
   opacity: 0.7;
+}
+
+.top-bar .right .fa {
+  font-size: 1.7rem;
+
+  padding-left: 7px;
+  padding-top: 7px;
+}
+
+.right .fa .fa-youtube {
+  color: #3e8e41;
 }
 
 /*middle component*/
@@ -665,3 +681,5 @@ popup
     opacity: 1;
   }
 }
+
+/*social media in topnav style cont...(in need of cleenup!!!)*/

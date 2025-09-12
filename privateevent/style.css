@@ -699,3 +699,76 @@ div.scroll-container img {
 .left-side-bar {
 }
 /*end side bars*/
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 50vw;
+  height: 30vh;
+  background-color: #ede7e7;
+  color: #060606;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  left: 25%;
+  border: #000 solid 2px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.con {
+  background-color: rebeccapurple;
+}
+
+.con :hover {
+  background-color: blueviolet;
+}
