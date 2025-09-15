@@ -149,7 +149,7 @@ body {
 }
 
 /* Mobile Styles */
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   .navbar ul {
     position: absolute;
     top: 100%;
