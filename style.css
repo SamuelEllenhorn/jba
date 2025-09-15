@@ -191,8 +191,16 @@ body {
   cursor: pointer;
 }
 
+.moto {
+  font-size: auto;
+}
+
 /* Mobile Styles */
 @media (max-width: 1350px) {
+  .moto {
+    font-size: 20vw;
+  }
+
   .navbar ul {
     position: absolute;
     top: 100%;
@@ -225,6 +233,15 @@ body {
 
   .hamburger {
     display: block;
+  }
+
+  .top-bar .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position: relative;
   }
 }
 
@@ -557,7 +574,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
   z-index: 20;
-  position: relative;
+  position: absolute;
 }
 
 .dropdown:hover .dropbtn {
