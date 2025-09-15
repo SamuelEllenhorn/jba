@@ -226,10 +226,6 @@ body {
   .hamburger {
     display: block;
   }
-
-  .register-btn {
-    display: none;
-  }
 }
 
 /* Hero */

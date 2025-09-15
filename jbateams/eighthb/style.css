@@ -184,10 +184,12 @@ body {
     display: block;
   }
 
-  .register-btn {
-    display: none;
-  }
+  
 }
+
+
+
+
 
 .fa {
   padding: 12px;
