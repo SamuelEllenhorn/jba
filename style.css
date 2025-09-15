@@ -173,7 +173,10 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-
+.register-btn-div1 {
+  padding-right: 15rem;
+  padding-bottom: 0.2rem;
+}
 .hero .register-btn {
   background-color: #0060a5;
 }
@@ -182,6 +185,12 @@ body {
   background: rgb(78, 78, 82);
 }
 
+.register-btn-div2 .register-btn {
+  background-color: pink;
+}
+.register-btn-div2 .register-btn:hover {
+  background-color: rgb(179, 136, 143);
+}
 /*register button two*/
 
 /* Hamburger */
@@ -249,23 +258,29 @@ body {
 .hero {
   position: relative;
   height: 60vh;
-  background: url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1350&q=80")
-    no-repeat center center/cover;
+
+  background: url("./images/indexbackground.png") no-repeat center center/cover;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   text-align: center;
+}
+
+.home-register-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .hero h1 {
   font-size: 6rem;
   background: linear-gradient(
     90deg,
-    rgb(255, 255, 255),
-    grey,
-    rgb(255, 254, 254)
+    rgb(24, 6, 84),
+    rgb(13, 10, 196),
+    rgb(30, 14, 177)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

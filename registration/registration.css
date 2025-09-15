@@ -129,14 +129,23 @@ body {
 /*form*/
 .form-section {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  align-content: center;
   min-height: auto;
   background-color: #a5d8b7;
   margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.bottom-button-style{
+  background-color: #a5d8b7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-bottom: 2%;
 }
 
 /*popup*/
@@ -223,7 +232,7 @@ body {
 }
 
 .paymeant-link-btn {
-  color: #000000;
+  color: #fcf5f5;
   border: 1px solid #000000;
   padding: 10px 18px;
   font-weight: bold;
