@@ -21,3 +21,21 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+
+function toggleDropdown(element) {
+  element.classList.toggle("active-dropdown");
+}
+
+function toggleMenu() {
+  const nav = document.getElementById("nav-links");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+
+function toggleDropdown(element) {
+  element.classList.toggle("active-dropdown");
+}
