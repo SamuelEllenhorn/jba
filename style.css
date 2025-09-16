@@ -204,8 +204,23 @@ body {
   font-size: auto;
 }
 
+.commissioner-photo-mobile {
+  display: none;
+}
+
 /* Mobile Styles */
 @media (max-width: 1350px) {
+  .commissioner-photo-mobile {
+    display: flex;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: #757373 solid 6px;
+    border-radius: 12px;
+    width: 42%;
+  }
+  .commissioner-photo {
+    display: none;
+  }
   .register-btn-div1 {
     padding-right: 1rem;
     padding-bottom: 0.2rem;
