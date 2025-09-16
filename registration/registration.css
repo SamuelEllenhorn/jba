@@ -441,14 +441,25 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 1350px) {
+
   .form-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .left-form {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    width: 100%;     /* keep it within page borders */
+      height: 100%;    /* leave some space at edges */
+      
+      border-radius: 8px;
+      overflow: hidden; /
+  }
+  .right-form{
+    width: 90%;     /* keep it within page borders */
+      height: 90%;    /* leave some space at edges */
+      
+      border-radius: 8px;
+      overflow: hidden; /
   }
   .navbar ul {
     position: absolute;
