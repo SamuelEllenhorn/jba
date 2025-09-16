@@ -438,10 +438,22 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
-
+.form-button-section{
+  display: none;
+}
 /* Mobile Styles */
 @media (max-width: 1350px) {
 
+  .form-button-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: auto;
+  
+}
+.form-button-section{
+  background-color: #1d00f5;
+}
   .form-section {
     display: flex;
     flex-direction: column;
