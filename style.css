@@ -206,6 +206,10 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 1350px) {
+  .register-btn-div1 {
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+  }
   .moto {
     font-size: 20vw;
   }
