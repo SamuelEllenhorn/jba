@@ -256,6 +256,11 @@ body {
   .dropdown:hover .dropdown-content {
     position: relative;
   }
+  .register-btn {
+    font-size: 1rem;
+    position: relative;
+    background-color: #fdfdfd;
+  }
 }
 
 /* Hero */
