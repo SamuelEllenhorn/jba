@@ -444,15 +444,18 @@ body {
 /* Mobile Styles */
 @media (max-width: 1350px) {
 
-  .form-button-section{
+.form-button-section{
+  background-color: #a5d8b7;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  
-  
+  justify-content: space-around;
 }
-.form-button-section{
-  background-color: #1d00f5;
+
+.form-button-section .button :hover{
+  background-color: #000;
 }
+  
   .form-section {
     display: flex;
     flex-direction: column;
