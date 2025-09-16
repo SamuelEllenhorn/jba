@@ -210,6 +210,12 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 1350px) {
+  .boys-button-style {
+    background-color: #1d00f5;
+  }
+  .girls-button-style {
+    background-color: pink;
+  }
   .commissioner-photo-mobile {
     display: flex;
     object-fit: cover;
