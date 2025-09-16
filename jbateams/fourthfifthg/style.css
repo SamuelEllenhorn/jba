@@ -610,7 +610,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
   z-index: 20;
-  position: relative;
+  position: absolute;
 }
 
 .dropdown:hover .dropbtn {
