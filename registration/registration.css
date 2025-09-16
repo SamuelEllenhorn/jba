@@ -447,8 +447,7 @@ body {
   .form-button-section{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding: auto;
+  
   
 }
 .form-button-section{
