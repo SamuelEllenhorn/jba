@@ -259,7 +259,7 @@ body {
   .register-btn {
     font-size: 1rem;
     position: relative;
-    background-color: #fdfdfd;
+    padding: 5px 9px;
   }
 }
 
