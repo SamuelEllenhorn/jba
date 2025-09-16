@@ -452,14 +452,14 @@ body {
       height: 100%;    /* leave some space at edges */
       
       border-radius: 8px;
-      overflow: hidden; /
+      overflow: scroll; /
   }
   .right-form{
-    width: 90%;     /* keep it within page borders */
-      height: 90%;    /* leave some space at edges */
+    width: 100%;     /* keep it within page borders */
+      height: 100%;    /* leave some space at edges */
       
       border-radius: 8px;
-      overflow: hidden; /
+      overflow: scroll; /
   }
   .navbar ul {
     position: absolute;
