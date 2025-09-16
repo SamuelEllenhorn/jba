@@ -140,7 +140,7 @@ body {
   padding-bottom: 10px;
 }
 
-.bottom-button-style{
+.bottom-button-style {
   background-color: #a5d8b7;
   justify-content: center;
   align-items: center;
@@ -175,12 +175,9 @@ body {
   top: 30%;
   left: 25%;
   border: #000 solid 2px;
-  
 }
 
-.popuptext .fa{
-  
-  
+.popuptext .fa {
   font-size: 20px;
   cursor: pointer;
   position: center;
@@ -241,7 +238,6 @@ body {
   transition: 0.3s;
   padding-top: 12px;
   background-color: #1d00f5;
-  
 }
 
 .paymeant-link-btn:hover {
@@ -352,7 +348,7 @@ body {
   text-decoration: none;
 }
 
-.right .fa{
+.right .fa {
   padding: 5px;
   font-size: 18px;
   width: 30px;
@@ -430,13 +426,12 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
   z-index: 20;
-  position: relative;
+  position: absolute;
 }
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
-
 
 .hamburger {
   display: none;
@@ -446,6 +441,15 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 1350px) {
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-form {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
   .navbar ul {
     position: absolute;
     top: 100%;
@@ -457,4 +461,54 @@ body {
     display: none;
   }
 
- 
+  .register-btn-div1 {
+    padding-right: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  .moto {
+    font-size: 20vw;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    border-top: 1px solid #ddd;
+    display: none;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .navbar ul li ul {
+    position: static;
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar ul li:hover ul {
+    display: none;
+  }
+
+  .navbar ul li.active-dropdown ul {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .top-bar .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position: relative;
+  }
+}
