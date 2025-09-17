@@ -654,15 +654,17 @@ popup
   border: #444 solid 3px;
 }
 
-.commissioner-photo-mobile:hover {
-}
-.commissioner-photo-mobile:active {
-}
-
 .spacer {
   display: none;
 }
 @media (max-width: 1350px) {
+  .commissioner-message {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
   .spacer {
     display: block;
   }
