@@ -485,7 +485,7 @@ body {
   .left-form {
     
 
-          padding-bottom: 200%; /* More vertical space for mobile */
+    padding-bottom: 200%; /* More vertical space for mobile */
     max-width: 100vw;
   }
   .right-form{
