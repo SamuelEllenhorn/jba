@@ -112,8 +112,8 @@ ment section*/
     left: 2%;
   }
   .iframe {
-    width: 100vw;
-    height: 100vh;
+    width: 200;
+    height: 200;
   }
   .bgimg {
     display: flex;
