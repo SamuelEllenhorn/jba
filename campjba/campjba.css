@@ -37,12 +37,13 @@ html {
 .middle {
   position: absolute;
   top: 20%;
+  bottom: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
-hr {
+.hr {
   margin: auto;
   width: 40%;
 }
@@ -50,11 +51,84 @@ hr {
 .home-image img {
   padding-left: 1px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registration-section {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+/*pay
+ment section*/
+.finish-registration-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.finish-registration-button button {
+  border: none;
+  color: black;
+  background-color: rgb(9, 9, 176);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
-.home-section {
+.finish-registration-button.button :hover {
+  background-color: rgb(0, 0, 101);
+}
+
+.finish-registration-button button:hover {
+  background-color: rgb(0, 0, 101);
   color: white;
 }
-.home-section :hover {
-  color: #565554;
-  cursor: pointer;
+@media only screen and (max-width: 600px) {
+  .topleft {
+    left: 10px;
+    top: 10px;
+  }
+  .topleft img {
+    height: 50px;
+  }
+  .bottomleft {
+    left: 10px;
+    font-size: 14px;
+  }
+  .registration-section {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+  }
+  .iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .bgimg {
+    background-color: black;
+    background-image: none;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bgimg {
+    background-color: black;
+    background-image: none;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+  }
 }
